@@ -88,6 +88,7 @@ class FragmentA : Fragment {
 
     override fun onResume() {
         Log.d("TAG", "Fragment FragmentA onResume")
+        Log.d("TAG", "====================")
         super.onResume()
     }
 
@@ -114,6 +115,7 @@ class FragmentA : Fragment {
 
     override fun onDetach() {
         Log.d("TAG", "Fragment FragmentA onDetach")
+        Log.d("TAG", "====================")
         super.onDetach()
     }
 }

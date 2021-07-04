@@ -55,6 +55,7 @@ class FragmentCommitTestActivity : AppCompatActivity() {
 
     override fun onResume() {
         Log.d("TAG", "Activity onResume")
+        Log.d("TAG", "====================")
         super.onResume()
     }
 
@@ -65,7 +66,8 @@ class FragmentCommitTestActivity : AppCompatActivity() {
 
     override fun onDestroy() {
         Log.d("TAG", "Activity onDestroy")
-        supportFragmentManager.commit {
+        Log.d("TAG", "====================")
+        supportFragmentManager.commit(true) {
             val fragment = supportFragmentManager.findFragmentById(binding.container2.id)
             if (fragment != null) {
                 remove(fragment)
